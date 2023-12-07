@@ -1,5 +1,8 @@
+import singleton.HelloUtil;
+
 class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    HelloUtil helloUtil = HelloUtil.getInstance();
+    helloUtil.helloMethod();
   }
 }
